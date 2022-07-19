@@ -1,14 +1,22 @@
 :root {
-  --first-color: #212121;
-  --second-color: #757575;
+  --black-color: #212121;
+  --gray-color: #757575;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
 }
 .body {
   font-family: Roboto, sans-serif;
 }
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 /*-------HEADER---------*/
 .logo {
   font-family: Raleway, sans-serif;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -23,7 +31,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 .item {
   color: #2196f3;
@@ -35,7 +43,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-color);
+  color: var(--gray-color);
 }
 
 .header-link:hover,
@@ -44,20 +52,20 @@
 .header-link:focus,
 .header-mail:focus,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /*-------HERO---------*/
 .hero {
   background-color: #2f303a;
 }
-.hero-tatle {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero-btn {
@@ -66,22 +74,30 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+
 /*-------Переваги---------*/
-.tatle {
+.title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--first-color);
+  color: var(--black-color);
 }
-.after-tatle {
+.after-title {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--gray-color);
 }
 /*-------Чим ми займаємося---------*/
 .headline {
@@ -89,7 +105,7 @@
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 
 /*-------Наша команда---------*/
@@ -98,13 +114,13 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 .after-subject {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--gray-color);
 }
 
 /*-------FOOTER---------*/
@@ -112,7 +128,7 @@
   background-color: #2f303a;
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-address {
@@ -121,7 +137,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-mail,
@@ -140,24 +156,26 @@
 .footer-address:focus,
 .footer-mail:focus,
 .footer-tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /*-------PORTFOLIO---------*/
 
 .btn {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--first-color);
+  background-color: #f5f4fa;
 }
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .text {
@@ -165,13 +183,12 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--first-color);
+  color: var(--black-color);
 }
 
 .after-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--gray-color);
 }
