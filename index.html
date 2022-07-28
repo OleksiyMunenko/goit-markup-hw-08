@@ -13,18 +13,20 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header class="header">
       <div class="container nav">
-        <div class="logo-nav">
-          <a href="" class="logo link"
-            >Web<span class="header-logo">Studio</span></a
-          >
-        </div>
+        <a href="" class="logo link"
+          >Web<span class="header-logo">Studio</span></a
+        >
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="item"><a href="" class="header-link link">Студія</a></li>
@@ -53,12 +55,14 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-        <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn">Замовити послугу</button>
+        </div>
       </section>
 
-      <section class="benefits section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
 
@@ -91,7 +95,11 @@
               </p>
             </li>
           </ul>
+        </div>
+      </section>
 
+      <section class="section work">
+        <div class="container">
           <h2 class="headline">Чим ми займаємося</h2>
           <ul class="headline-items list">
             <li>
@@ -134,8 +142,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="subject">Ігор Дем'яненко</h3>
-              <p class="after-subject">Product Designer</p>
+              <div class="team-text">
+                <h3 class="subject">Ігор Дем'яненко</h3>
+                <p class="after-subject">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -144,8 +154,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="subject">Ольга Рєпіна</h3>
-              <p class="after-subject">Frontend Developer</p>
+              <div class="team-text">
+                <h3 class="subject">Ольга Рєпіна</h3>
+                <p class="after-subject">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -154,8 +166,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="subject">Микола Тарасов</h3>
-              <p class="after-subject">Marketing</p>
+              <div class="team-text">
+                <h3 class="subject">Микола Тарасов</h3>
+                <p class="after-subject">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -164,8 +178,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="subject">Михайло Єрмаков</h3>
-              <p class="after-subject">UI Designer</p>
+              <div class="team-text">
+                <h3 class="subject">Михайло Єрмаков</h3>
+                <p class="after-subject">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,11 +190,9 @@
 
     <footer class="footer">
       <div class="container footer-nav">
-        <div class="logo-fooret">
-          <a href="./index.html" class="logo link"
-            >Web<span class="footer-logo">Studio</span></a
-          >
-        </div>
+        <a href="./index.html" class="logo-footer link"
+          >Web<span class="footer-logo">Studio</span></a
+        >
 
         <address class="address">
           <ul class="list footer-items">
