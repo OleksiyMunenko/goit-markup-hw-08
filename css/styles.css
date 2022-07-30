@@ -154,8 +154,6 @@ img {
 }
 
 .hero-title {
-  padding: 0;
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -205,7 +203,6 @@ img {
   margin-left: 30px;
 }
 .title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -217,8 +214,6 @@ img {
 }
 
 .after-title {
-  margin-top: 0;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -231,7 +226,6 @@ img {
 }
 
 .headline {
-  margin-top: 0;
   margin-bottom: 50px;
 
   text-align: center;
@@ -257,7 +251,6 @@ img {
 }
 
 .heading {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -314,9 +307,6 @@ img {
 
 .logo-footer {
   display: block;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 0;
   margin-bottom: 20px;
 
   font-family: Raleway, sans-serif;
