@@ -66,7 +66,9 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -147,7 +149,7 @@
                 width="370"
                 height="294"
               />
-				  <p class="headline-top-text">Мобільні додатки</p>
+              <p class="headline-top-text">Мобільні додатки</p>
             </li>
 
             <li class="headline-item">
@@ -551,21 +553,30 @@
             </li>
           </ul>
         </div>
+
+        <form class="mailing-form">
+          <p class="mailing-title">Підпишіться на розсилку</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="mailing-email"
+          />
+          <button type="submit" class="mailing-submit">Підписатися</button>
+        </form>
       </div>
     </footer>
 
-	 <div class="backdrop is-hidden" data-modal>
-		<div class="modal">
-			<button class="modal-close" type="button" data-modal-close>
-				<svg class="close-svg" width="18px" height="18px">
-					<use href="./images/icons.svg#icon-close-black-18dp"></use>
-				</svg>
-			</button>
-		</div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="close-svg" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-	 </div>
-
-	 <script src="./js/modal.js"></script>
-
+    <script src="./js/modal.js"></script>
   </body>
 </html>
