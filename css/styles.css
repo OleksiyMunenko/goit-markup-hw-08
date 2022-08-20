@@ -661,6 +661,7 @@ img {
 .mailing-submit:hover,
 .mailing-submit:focus {
   background-color: #188ce8;
+  cursor: pointer;
 }
 
 /*-------PORTFOLIO---------*/
@@ -849,6 +850,7 @@ img {
 .modal-close:hover,
 .modal-close:focus {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .is-hidden {
@@ -873,6 +875,7 @@ img {
 }
 
 .modal-label {
+  display: block;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -919,6 +922,7 @@ img {
 }
 
 .modal-text {
+  display: block;
   width: 100%;
   min-height: 120px;
   resize: none;
@@ -1027,4 +1031,5 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
+  cursor: pointer;
 }
