@@ -1,0 +1,70 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  background-color: $firstColorBg;
+  &__nav {
+    display: flex;
+  }
+}
+
+.page-header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: $secondFont;
+  @include font(700, 26px, 31px, 0.03em);
+  color: $firstLogoColor;
+  &-second {
+    color: $secondLogoColor;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+  & .site-nav__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 16px, 0.02em);
+  color: $firstColorFont;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accentColorFont;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  & .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
+}
+
+.contacts__mail,
+.contacts__tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 16px, 0.02em);
+  color: $secondColorFont;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+	color: $accentColorFont;
+  }
+}
+
+.contacts__mail-icon,
+.contacts__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

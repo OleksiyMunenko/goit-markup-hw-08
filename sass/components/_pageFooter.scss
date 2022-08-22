@@ -1,0 +1,65 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $thirdColorBg;
+
+  &__communication {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: $secondFont;
+    @include font(700, 26px, 31px, 0.03em);
+    color: $firstLogoColor;
+  }
+
+  &__logo-second {
+    color: $thirdLogoColor;
+  }
+}
+
+.address {
+  width: 231px;
+
+  &__item + &__item {
+    margin-top: 9px;
+  }
+
+  &__address {
+    font-family: inherit;
+    @include font(400, 14px, 24px, 0.03em);
+    color: $thirdColorFont;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__mail,
+  &__tel {
+    font-family: inherit;
+    @include font(400, 14px, 24px, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__address:hover,
+  &__mail:hover,
+  &__tel:hover,
+  &__address:focus,
+  &__mail:focus,
+  &__tel:focus {
+    color: $accentColorFont;
+  }
+}
+
+
+

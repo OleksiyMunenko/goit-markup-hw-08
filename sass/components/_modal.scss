@@ -1,0 +1,221 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden .modal {
+    transform: translate(-250%, -50%) scale(0);
+  }
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+
+  padding: 40px;
+  background-color: $firstColorBg;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $firstColorBg;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accebtSvgColor;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+
+  @include font(700, 20px, 23px, 0.03em);
+  text-align: center;
+  color: $firstColorFont;
+}
+
+.modal-fild {
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  display: block;
+  @include font(400, 12px, 14px, 0.01em);
+  color: $secondColorFont;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accebtSvgColor;
+  }
+  &:hover + .modal-svg,
+  &:focus + .modal-svg {
+    fill: $accebtSvgColor;
+  }
+}
+
+.modal-wrap {
+  position: relative;
+}
+
+.modal-svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  resize: none;
+
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-text::placeholder {
+  @include font(400, 12px, 14px, 0.01em);
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-text:hover,
+.modal-text:focus {
+  border-color: $accentColorFont;
+  outline: transparent;
+}
+
+.modal-checkbox {
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  @include font(400, 14px, 24px, 0.03em);
+  color: $secondColorFont;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-svg {
+  opacity: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked + .check-text span {
+  background-color: $accentColorFont;
+  border: none;
+}
+
+.modal-check:hover + .check-text span,
+.modal-check:focus + .check-text span {
+  border-color: $accentColorFont;
+}
+
+.modal-check:checked + .check-text .check-svg {
+  fill: $secondSvgColor;
+  opacity: 1;
+}
+
+.check-link {
+  margin-left: 8px;
+  color: $accentColorFont;
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $accentBtnColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  @include font(700, 16px, 30px, 0.06em);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $thirdColorFont;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accentBtnColor;
+  }
+}

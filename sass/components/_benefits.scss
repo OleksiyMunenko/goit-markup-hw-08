@@ -1,0 +1,46 @@
+.benefits__list {
+  display: flex;
+}
+
+.benefits__item {
+  width: 270px;
+}
+
+.benefits__item + .benefits__item {
+  margin-left: 30px;
+}
+
+.benefits__icon-box {
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: $secondColorBg;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.denefits__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+
+  @include font(700, 14px, 16px, 0.03em);
+  text-transform: uppercase;
+  color: $secondLogoColor;
+}
+
+.benefits__after-title {
+  @include font(400, 14px, 24px, 0.03em);
+  color: $secondColorFont;
+}
+
+

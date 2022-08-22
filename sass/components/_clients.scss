@@ -1,0 +1,39 @@
+.client {
+	&__title {
+		@include font(700, 36px, 42px, 0.03em);
+		text-align: center;
+		color: $firstColorFont;
+		margin-bottom: 50px;
+	 }
+	 &__list {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+	 }
+	 
+	 &__link {
+		width: 170px;
+		height: 92px;
+		border: 1px solid $firstSvgColor;
+		border-radius: 4px;
+	 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $firstSvgColor;
+	 
+		transition-property: color, border-color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	 }
+	 
+	 &__icon {
+		fill: currentColor;
+	 }
+	 
+	 &__link:hover,
+	 &__link:focus {
+		border-color: $accebtSvgColor;
+		color: $accebtSvgColor;
+	 }
+}
