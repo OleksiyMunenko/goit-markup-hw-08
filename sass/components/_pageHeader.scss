@@ -1,22 +1,11 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   background-color: $firstColorBg;
-  &__nav {
+  &__conteiner {
     display: flex;
   }
 }
 
-.page-header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: $secondFont;
-  @include font(700, 26px, 31px, 0.03em);
-  color: $firstLogoColor;
-  &-second {
-    color: $secondLogoColor;
-  }
-}
 
 .site-nav__list {
   display: flex;
@@ -47,8 +36,7 @@
   }
 }
 
-.contacts__mail,
-.contacts__tel {
+.contacts__link {
   padding-top: 32px;
   padding-bottom: 32px;
   @include font(500, 14px, 16px, 0.02em);
@@ -63,8 +51,7 @@
   }
 }
 
-.contacts__mail-icon,
-.contacts__tel-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }

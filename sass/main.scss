@@ -4,12 +4,13 @@
 @import './utils/mixins';
 
 @import './utils/current';
-@import './utils/button';
+@import './components/button';
 @import './base/container';
 @import './base/section';
 @import './base/body';
 
 @import './components/pageHeader';
+@import './components/headerLogo';
 @import './utils/openPage';
 @import './components/hero';
 @import './components/benefits';

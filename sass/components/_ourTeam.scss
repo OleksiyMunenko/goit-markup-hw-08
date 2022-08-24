@@ -1,18 +1,12 @@
-.our-team {
-  text-align: center;
+.section--other-bg {
   background-color: $secondColorBg;
+}
 
-  &__title {
-    margin-bottom: 50px;
-    @include font(700, 36px, 42px, 0.03em);
-    color: $firstColorFont;
-  }
-
-  &__list {
-    display: flex;
-  }
+.our-team {
+  display: flex;
 
   &__item {
+    text-align: center;
     background-color: $firstColorBg;
     border-radius: 0px 0px 4px 4px;
 
@@ -24,26 +18,26 @@
   }
 }
 
-.info-box {
+.our-team__box {
   padding-top: 30px;
   padding-bottom: 30px;
-
-  &__subject {
-    margin-bottom: 10px;
-
-    @include font(500, 16px, 19px, 0.03em);
-    color: $firstColorFont;
-  }
-
-  &__after-subject {
-    margin-bottom: 16px;
-
-    @include font(400, 16px, 19px, 0.03em);
-    color: $secondColorFont;
-  }
 }
 
-.team-soc {
+.our-team__title {
+  margin-bottom: 10px;
+
+  @include font(500, 16px, 19px, 0.03em);
+  color: $firstColorFont;
+}
+
+.our-team__text {
+  margin-bottom: 16px;
+
+  @include font(400, 16px, 19px, 0.03em);
+  color: $secondColorFont;
+}
+
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -61,15 +55,15 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accebtSvgColor;
+      color: $secondSvgColor;
+    }
   }
 
   &__icon {
     fill: currentColor;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    background-color: $accebtSvgColor;
-    color: $secondSvgColor;
   }
 }

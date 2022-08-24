@@ -8,21 +8,7 @@
     display: flex;
     align-items: baseline;
   }
-
-  &__logo {
-    display: block;
-    margin-bottom: 20px;
-
-    font-family: $secondFont;
-    @include font(700, 26px, 31px, 0.03em);
-    color: $firstLogoColor;
-  }
-
-  &__logo-second {
-    color: $thirdLogoColor;
-  }
-}
-
+  
 .address {
   width: 231px;
 

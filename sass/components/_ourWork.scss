@@ -1,21 +1,6 @@
-.section-not-padding-top {
-	padding-top: 0;
-}
-
 .our-work {
-
-  &__title {
-    margin-bottom: 50px;
-
-    text-align: center;
-    @include font(700, 36px, 42px, 0.03em);
-    color: $firstColorFont;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 
   &__item {
     position: relative;
@@ -32,7 +17,7 @@
     justify-content: center;
     align-items: center;
 
-	 @include font(700, 14px, 16px, 0.03em);
+    @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: $thirdColorFont;
     background-color: rgba(47, 48, 58, 0.8);

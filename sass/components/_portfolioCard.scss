@@ -1,18 +1,19 @@
-.portfolio-list {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  & .item {
+  &__item {
     background-color: $firstColorBg;
     margin-bottom: 30px;
-  }
-  & .item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
-.portfolio-link {
+.portfolio__link {
   display: block;
 
   transition-property: box-shadow;
@@ -23,11 +24,6 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  &:hover .portfolio-top-text,
-  &:focus .portfolio-top-text {
-    transform: translateY(0);
   }
 }
 
@@ -50,6 +46,11 @@
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .item-text {
@@ -65,7 +66,7 @@
   margin-bottom: 4px;
   margin-top: 0;
 
-  @include font(700,18px, 36px, 0.06em);
+  @include font(700, 18px, 36px, 0.06em);
   color: $firstColorFont;
 }
 

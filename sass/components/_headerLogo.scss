@@ -1,0 +1,16 @@
+.logo {
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	font-family: $secondFont;
+	@include font(700, 26px, 31px, 0.03em);
+	color: $firstLogoColor;
+	
+	&__black {
+	  color: $secondLogoColor;
+	}
+
+	&__white {
+		color: $thirdLogoColor;
+	}
+ }
