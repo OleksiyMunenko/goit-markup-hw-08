@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 
   &__link {
-    width: 170px;
+    width: 280px;
     height: 92px;
     border: 1px solid $firstSvgColor;
     border-radius: 4px;
@@ -18,11 +19,25 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
+	 &:hover,
     &:focus {
       border-color: $accebtSvgColor;
       color: $accebtSvgColor;
     }
+
+    @include mobile {
+      width: 210px;
+    }
+
+    @include tablet {
+		width: 226px;
+    }
+
+    @include desktop {
+		width: 170px;
+    }
+
+    
   }
 
   &__icon {

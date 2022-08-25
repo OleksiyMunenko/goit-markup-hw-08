@@ -28,7 +28,22 @@
 
 .section__title {
   text-align: center;
-  margin-bottom: 50px;
-  @include font(700, 36px, 42px, 0.03em);
+  margin-bottom: 25px;
+  @include font(700, 24px, 28px, 0.03em);
   color: $firstColorFont;
+
+  @include mobile {
+    margin-bottom: 30px;
+	 @include font(700, 28px, 33px, 0.03em);
+  }
+
+  @include tablet {
+    margin-bottom: 30px;
+	 @include font(700, 28px, 33px, 0.03em);
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+	 @include font(700, 36px, 42px, 0.03em);
+  }
 }

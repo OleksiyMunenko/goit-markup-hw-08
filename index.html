@@ -60,7 +60,7 @@
     </header> -->
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 
@@ -68,7 +68,7 @@
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="section">
         <div class="container">
@@ -163,17 +163,39 @@
         </div>
       </section>
 
-      <!-- <section class="section section--other-bg">
+      <section class="section section--other-bg">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="our-team">
             <li class="our-team__item">
-              <img
-                src="./images/photo1.jpg"
-                alt="фото Ігора Дем'яненка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo1-desk1.jpg    1x,
+                    ./images/photo1-desk1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1-tab1.jpg    1x,
+                    ./images/photo1-tab1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1-mob1.jpg    1x,
+                    ./images/photo1-mob1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/photo1-mob1.jpg"
+                  alt="фото Ігора Дем'яненка"
+                />
+              </picture>
+
               <div class="our-team__box">
                 <h3 class="our-team__title">Ігор Дем'яненко</h3>
                 <p class="our-team__text">Product Designer</p>
@@ -229,12 +251,30 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/photo2.jpg"
-                alt="фото Ольги Рєпіної"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo2-desk1.jpg    1x,
+                    ./images/photo2-desk1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2-tab1.jpg    1x,
+                    ./images/photo2-tab1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2-mob1.jpg    1x,
+                    ./images/photo2-mob1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/photo2-mob1.jpg" alt="фото Ольги Рєпіної" />
+              </picture>
               <div class="our-team__box">
                 <h3 class="our-team__title">Ольга Рєпіна</h3>
                 <p class="our-team__text">Frontend Developer</p>
@@ -290,12 +330,33 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/photo3.jpg"
-                alt="фото Миколи Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo3-desk1.jpg    1x,
+                    ./images/photo3-desk1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3-tab1.jpg    1x,
+                    ./images/photo3-tab1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3-mob1.jpg    1x,
+                    ./images/photo3-mob1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/photo3-mob1.jpg"
+                  alt="фото Миколи Тарасова"
+                />
+              </picture>
               <div class="our-team__box">
                 <h3 class="our-team__title">Микола Тарасов</h3>
                 <p class="our-team__text">Marketing</p>
@@ -351,12 +412,33 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/photo4.jpg"
-                alt="фото Михайла Єрмакова"
-                width="270"
-                height="260"
-              />
+					<picture>
+						<source
+						  srcset="
+							 ./images/photo4-desk1.jpg    1x,
+							 ./images/photo4-desk1-2x.jpg 2x
+						  "
+						  media="(min-width: 1200px)"
+						/>
+						<source
+						  srcset="
+							 ./images/photo4-tab1.jpg    1x,
+							 ./images/photo4-tab1-2x.jpg 2x
+						  "
+						  media="(min-width: 768px)"
+						/>
+						<source
+						  srcset="
+							 ./images/photo4-mob1.jpg    1x,
+							 ./images/photo4-mob1-2x.jpg 2x
+						  "
+						  media="(max-width: 767px)"
+						/>
+						<img
+						  src="./images/photo4-mob1.jpg"
+						  alt="фото Михайла Єрмакова"
+						/>
+					 </picture>
               <div class="our-team__box">
                 <h3 class="our-team__title">Михайло Єрмаков</h3>
                 <p class="our-team__text">UI Designer</p>
@@ -413,9 +495,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="client">
@@ -463,7 +545,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- <footer class="page-footer">
