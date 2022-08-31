@@ -6,15 +6,74 @@
 
   &__communication {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+    }
   }
 }
-  
+
+.footer-logo {
+  font-family: $secondFont;
+  @include font(700, 26px, 31px, 0.03em);
+  color: $firstLogoColor;
+
+  &__white {
+    color: $thirdLogoColor;
+  }
+
+  @include mobile {
+    @include font(700, 24px, 28px, 0.03em);
+  }
+
+  @include tablet {
+    @include font(700, 24px, 28px, 0.03em);
+  }
+
+  @include desktop {
+    @include font(700, 26px, 31px, 0.03em);
+  }
+}
+
+.footer-address {
+  text-align: center;
+
+  @include tablet {
+    width: 232px;
+    flex-basis: 50%;
+  }
+  @include desktop {
+    flex-basis: auto;
+    width: 231px;
+    text-align: left;
+  }
+}
+
 .address {
-  width: 231px;
+  margin-top: 20px;
 
   &__item + &__item {
-    margin-top: 9px;
+    margin-top: 6px;
+
+    @include mobile {
+      margin-top: 8px;
+    }
+    @include tablet {
+      margin-top: 8px;
+    }
+    @include desktop {
+      margin-top: 9px;
+    }
   }
 
   &__address {
@@ -47,6 +106,3 @@
     color: $accentColorFont;
   }
 }
-
-
-

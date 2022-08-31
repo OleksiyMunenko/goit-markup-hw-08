@@ -1,16 +1,31 @@
 .logo {
-	margin-right: 93px;
-	padding-top: 24px;
-	padding-bottom: 25px;
-	font-family: $secondFont;
-	@include font(700, 26px, 31px, 0.03em);
-	color: $firstLogoColor;
-	
-	&__black {
-	  color: $secondLogoColor;
-	}
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include font(700, 24px, 28px, 0.03em);
+  font-family: $secondFont;
+  color: $firstLogoColor;
 
-	&__white {
-		color: $thirdLogoColor;
-	}
- }
+  &__black {
+    color: $secondLogoColor;
+  }
+
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include font(700, 24px, 28px, 0.03em);
+  }
+
+  @include tablet {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    @include font(700, 24px, 28px, 0.03em);
+  }
+
+  @include desktop {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    @include font(700, 26px, 31px, 0.03em);
+  }
+}

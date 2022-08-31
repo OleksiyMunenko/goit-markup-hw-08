@@ -1,10 +1,37 @@
 .list-btn {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  width: 300px;
 
-  & .item + .item {
-    margin-left: 8px;
+  & .item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  & .item:nth-last-child(-n + 2) {
+    margin-top: 21px;
+  }
+  @include mobile {
+    width: 326px;
+	 .item:nth-child(3) {
+		margin-right: 0px;
+	 }
+  }
+
+  @include tablet {
+    width: 100%;
+    justify-content: center;
+
+    .item:not(:last-child) {
+      margin-right: 8px;
+    }
+    .item:nth-last-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
+
+  @include desktop {
+    justify-content: center;
   }
 }
 
@@ -17,7 +44,7 @@
   border: 0;
   border-radius: 4px;
 
-  @include font(500, 16px, 26px, 0.03em);
+  @include font(500, 12px, 19px, 0.03em);
   color: $firstColorFont;
   background-color: $secondColorBg;
 
@@ -25,15 +52,16 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-	 color: $thirdColorFont;
-	 background-color: $accentBtnColor;
-	  
-	 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-		0px 2px 2px rgba(0, 0, 0, 0.12);
+  @include mobile {
+    @include font(500, 16px, 26px, 0.03em);
   }
 
+  &:hover,
+  &:focus {
+    color: $thirdColorFont;
+    background-color: $accentBtnColor;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
-
-
