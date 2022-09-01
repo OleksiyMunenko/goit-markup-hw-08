@@ -2,32 +2,12 @@
   display: flex;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  width: 300px;
-
-  & .item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  & .item:nth-last-child(-n + 2) {
-    margin-top: 21px;
-  }
-  @include mobile {
-    width: 326px;
-	 .item:nth-child(3) {
-		margin-right: 0px;
-	 }
-  }
+  gap: 15px 8px;
 
   @include tablet {
     width: 100%;
     justify-content: center;
-
-    .item:not(:last-child) {
-      margin-right: 8px;
-    }
-    .item:nth-last-child(-n + 2) {
-      margin-top: 0;
-    }
+	 margin-bottom: 30px;
   }
 
   @include desktop {

@@ -546,6 +546,11 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk1.jpg);
   }
 }
@@ -881,7 +886,7 @@ button {
 .page-footer__communication {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .page-footer__communication {
@@ -940,7 +945,6 @@ button {
 @media screen and (min-width: 768px) {
   .footer-address {
     width: 232px;
-    flex-basis: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1009,7 +1013,6 @@ button {
     margin-top: 0;
     margin: 0;
     gap: 0;
-    flex-basis: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1170,32 +1173,13 @@ button {
   display: flex;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  width: 300px;
-}
-.list-btn .item:not(:last-child) {
-  margin-right: 8px;
-}
-.list-btn .item:nth-last-child(-n+2) {
-  margin-top: 21px;
-}
-@media screen and (min-width: 480px) {
-  .list-btn {
-    width: 326px;
-  }
-  .list-btn .item:nth-child(3) {
-    margin-right: 0px;
-  }
+  gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
   .list-btn {
     width: 100%;
     justify-content: center;
-  }
-  .list-btn .item:not(:last-child) {
-    margin-right: 8px;
-  }
-  .list-btn .item:nth-last-child(-n+2) {
-    margin-top: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1263,9 +1247,14 @@ button {
 
 .portfolio__link {
   display: block;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1297,9 +1286,6 @@ button {
 }
 
 .item-text {
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -1311,7 +1297,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .item-text--height {
-    padding-bottom: 56px;
+    flex-grow: 1;
   }
 }
 

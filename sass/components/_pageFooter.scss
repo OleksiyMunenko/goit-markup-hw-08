@@ -7,7 +7,7 @@
   &__communication {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+	justify-content: space-around;
 
     @include tablet {
       flex-direction: row;
@@ -50,7 +50,6 @@
 
   @include tablet {
     width: 232px;
-    flex-basis: 50%;
   }
   @include desktop {
     flex-basis: auto;
